@@ -104,4 +104,7 @@ FILE_PATH="/etc/openwrt_release"
 NEW_DESCRIPTION="Compiled by XIAOLONG FENG"
 sed -i "s/DISTRIB_DESCRIPTION='[^']*'/DISTRIB_DESCRIPTION='$NEW_DESCRIPTION'/" "$FILE_PATH"
 
+echo "src/gz kiddin9 https://dl.openwrt.ai/packages-24.10/x86_64/kiddin9/$(. /etc/openwrt_release ; echo $DISTRIB_ARCH)"  >> /etc/opkg/customfeeds.conf
+
+
 exit 0
